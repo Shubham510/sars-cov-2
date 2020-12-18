@@ -7,7 +7,7 @@ const patientSchema = new mongoose.Schema({
     },
     phone:{
         type: Number,
-        patter: "[1-9][0-9]{9}", // 10 digit number
+        pattern: "[1-9][0-9]{9}", // 10 digit number
         reqired: true
     },
     reports:[
