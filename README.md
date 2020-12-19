@@ -22,4 +22,7 @@ Now run `npm start` to start the server.
   <li> api/patients/:id/all_reports → Lists all the reports of a patient oldest to latest </li>
   <li> api/reports/:status → Lists all the reports of all the patients filtered by a specific
        status </li>
+  
+  <br>
+  <p>Sample request for all the APIs can be found <a href="https://www.getpostman.com/collections/b4da973633d541920628">here</a></p>
 
