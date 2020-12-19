@@ -14,12 +14,12 @@ Now run `npm start` to start the server.
 
 <h2>Routes:</h2>
 <ul>
-  <li> /doctors/register → Requires doctor to register with email id, username and password </li>
-  <li> /doctors/login → returns the JWT token to be used </li>
-  <li> /patients/register → Requires User's Name and Phone number </li>
-  <li> /patients/:id/create_report → Require's report's status ( Status can be [Negative, Travelled-Quarantine,
+  <li> api/doctors/register → Requires doctor to register with email id, username and password </li>
+  <li> api/doctors/login → returns the JWT token to be used </li>
+  <li> api/patients/register → Requires User's Name and Phone number </li>
+  <li> api/patients/:id/create_report → Require's report's status ( Status can be [Negative, Travelled-Quarantine,
        Symptoms-Quarantine, Positive-Admit]) </li>
-  <li> /patients/:id/all_reports → Lists all the reports of a patient oldest to latest </li>
-  <li> /reports/:status → Lists all the reports of all the patients filtered by a specific
+  <li> api/patients/:id/all_reports → Lists all the reports of a patient oldest to latest </li>
+  <li> api/reports/:status → Lists all the reports of all the patients filtered by a specific
        status </li>
 
