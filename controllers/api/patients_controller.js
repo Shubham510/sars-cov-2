@@ -12,7 +12,7 @@ module.exports = {
             
             //Return all reports of an already registered patient
             if(patient) {
-                return res.redirect(`/api/patients/${ patient._id }/all_reports`);
+                return res.redirect(`/api/patients/${ patient._id }/all_reports_redirect`);
             }
 
             //Creating new patient
@@ -61,6 +61,29 @@ module.exports = {
     },
 
     allReports: async function (req, res) {
+        try{
+            // Checking if patient parameter is correct
+            let patient = await Patient.findById(req.params.id);
+            if(!patient){ return res.status(404).send('Patient not found'); }
+
+            // Gathering all the reports of that patient
+            let reports = await Patient.findById(req.params.id).populate({
+                path: 'reports'
+            });
+
+            return res.status(200).json({
+                message: "Reports fetched successfully!",
+                data : {
+                    all_reports: reports
+                }
+            });
+        }
+        catch(err){
+            return res.status(500).send(`Internal Server error`);
+        }
+    },
+
+    allReportsRedirect: async function (req, res) {
         try{
             // Checking if patient parameter is correct
             let patient = await Patient.findById(req.params.id);

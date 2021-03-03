@@ -41,6 +41,7 @@ module.exports = {
     createUser : async function(req, res) {
         try{
             let user = await Doctor.findOne({email: req.body.email});
+            console.log(req.body.email);
             if(user) {return res.status(400).send('Email already exists');}
 
             // Hashing the given password
