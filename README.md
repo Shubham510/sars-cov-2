@@ -1,7 +1,7 @@
 # sars-cov-2
 
 <h2>Description:</h2>
-A simple API based on nodejs with mongoDB for doctors to manage patients in a hospital which has been allocated by the govt for testing and quarantine + well being of COVID-19 patients.
+A simple API based application on Node.js with MongoDB for doctors to manage patients in a hospital which has been allocated by the govt for testing and quarantine + well being of COVID-19 patients.
 
 
 <h2>Installation:</h2>
