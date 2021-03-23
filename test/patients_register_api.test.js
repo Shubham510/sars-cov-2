@@ -11,7 +11,7 @@ chai.use(chaiHttp);
 describe("/patient/register", () => {
     it("should register the patient and return patient id", () => {
         let patient = {
-            "name": "Rohit",
+            "name": "Rohit Sharma",
             "phone": 8923450924
         }
         chai.request(server)

@@ -11,6 +11,7 @@ A simple API based application on Node.js with MongoDB for doctors to manage pat
 3. Install dependencies by running `npm install` inside the project directory.
 
 Now run `npm start` to start the server.
+Or run `npm test` to run the tests.
 
 <h2>Routes:</h2>
 <ul>
