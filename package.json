@@ -15,7 +15,7 @@
     "chai-http": "^4.3.0",
     "dotenv": "^8.2.0",
     "jsonwebtoken": "^8.5.1",
-    "mocha": "^8.3.2",
+    "mocha": "^10.2.0",
     "mongodb": "^3.6.2",
     "mongoose": "^5.10.7",
     "nodemon": "^2.0.4",
