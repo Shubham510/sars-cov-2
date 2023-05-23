@@ -17,8 +17,8 @@
     "jsonwebtoken": "^9.0.0",
     "mocha": "^8.3.2",
     "mongodb": "^3.6.2",
-    "mongoose": "^5.10.7",
-    "nodemon": "^2.0.4",
+    "mongoose": "^5.13.17",
+    "nodemon": "^2.0.22",
     "nyc": "^15.1.0"
   }
 }
